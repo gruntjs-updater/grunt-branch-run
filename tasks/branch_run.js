@@ -39,8 +39,18 @@ module.exports = function(grunt) {
         return false;
       }
       
-      var branch = result.strout;
-      console.log(branch);
+      var branch = result.stdout;
+      
+      if(!options[branch]){
+        if(options['*']){
+          branch = '*';
+        }else{
+          return done();
+        }        
+      }
+      
+      grunt.task.run(options[branch]);
+      
       done();
     });
     

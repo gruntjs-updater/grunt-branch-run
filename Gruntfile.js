@@ -20,12 +20,6 @@ module.exports = function(grunt) {
           master: ['foo', 'bar'],
           develop: ['bar']
         }
-      },
-      bar:{
-        options:{
-          master: ['foo222', 'bar'],
-          develop: ['bar22']
-        }
       }
     }
 
