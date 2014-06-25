@@ -41,6 +41,10 @@ module.exports = function(grunt) {
       
       var branch = result.stdout;
       
+      if(process.env.CI_BUILD_REF_NAME){
+        branch = process.env.CI_BUILD_REF_NAME;
+      }
+      
       if(!options[branch]){
         if(options['*']){
           branch = '*';
