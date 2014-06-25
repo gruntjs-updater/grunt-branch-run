@@ -1,0 +1,38 @@
+{
+  "name": "grunt-branch-run",
+  "description": "Run specific tasks only on a specific branch",
+  "version": "0.1.0",
+  "homepage": "https://github.com/PhilWaldmann/grunt-branch-run",
+  "author": {
+    "name": "Philipp Waldmann",
+    "email": "philipp@wu-server.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "hgit://github.com/PhilWaldmann/grunt-branch-run.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PhilWaldmann/grunt-branch-run/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/PhilWaldmann/grunt-branch-run/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
