@@ -1,7 +1,7 @@
 {
   "name": "grunt-branch-run",
   "description": "Run specific tasks only on a specific branch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/PhilWaldmann/grunt-branch-run",
   "author": {
     "name": "Philipp Waldmann",

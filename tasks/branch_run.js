@@ -49,6 +49,8 @@ module.exports = function(grunt) {
         }        
       }
       
+      grunt.log.writeln('On branch "' + branch + '". Run ' + options[branch].join(', '));
+      
       grunt.task.run(options[branch]);
       
       done();
