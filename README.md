@@ -35,12 +35,12 @@ grunt.initConfig({
 
 ### Options
 
-#### options.<branch_name>
+#### options.branch_name
 Type: `Array`
 
 Array with task names which should be run if that task is checked out.
 
-#### options.<branch_env_var>
+#### options.branch_env_var
 Type: `String`
 
 Name of the ENV variable with the branch name. 
