@@ -41,8 +41,18 @@ module.exports = function(grunt) {
       
       var branch = result.stdout;
       
+      //for gitlab-ci
       if(process.env.CI_BUILD_REF_NAME){
         branch = process.env.CI_BUILD_REF_NAME;
+      }
+          
+      //for travis-ci
+      if(process.env.TRAVIS_BRANCH){
+        branch = process.env.TRAVIS_BRANCH;
+      }
+      
+      if(options.branch_env_var && process.env[options.branch_env_var]){
+        branch = process.env[options.branch_env_var];
       }
       
       if(!options[branch]){
